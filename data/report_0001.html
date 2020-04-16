@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+    .gt .diff {
+        color: green;
+    }
+    .ocr .diff {
+        color: red;
+    }
+    .ellipsis {
+        opacity: 0.5;
+        font-style: italic;
+    }
+    .diff-highlight {
+      border: 2px solid;
+      border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+
+
+
+<div class="container">
+
+/home/pibib/data/curtius_gedaechtnisrede_koehler_1897/OCR-D-OCR-TESSEROCR/OCR-D-OCR-TESSEROCR_0001.xml<br>
+/home/pibib/data/curtius_gedaechtnisrede_koehler_1897/GT-OCR-D-OCR-TESSEROCR/OCR-D-OCR-TESSEROCR_0001.xml
+
+
+<h2>Metrics</h2>
+<p>CER: 0.0364</p>
+<p>WER: 0.0968</p>
+
+<h2>Character differences</h2>
+
+        <div class="row">
+           <div class="col-md-6 gt">GED<span class="cdiff3 diff">A</span>CHTNISSRE<span class="cdiff13 diff">N</span>E<br><span class="cdiff16 diff">W</span><span class="cdiff17 diff ellipsis">·</span><span class="cdiff18 diff ellipsis">·</span><span class="cdiff19 diff ellipsis">·</span><span class="cdiff20 diff ellipsis">·</span>RNS<span class="cdiff24 diff">I</span> CURTIUS<br>VON<br>ULRICH KÖHLER.<br>ABHANDLUNGEN DER KÖNIGL. PREUSS. AKADEMIE DER WISSEN<br>ZU BERLIN VOM JAHRE 1897.<br>BERLIN 1897.<br>VERLAG DER KÖNIGL. AKADEMIE DER WISSENSCHAFTEN.<br>IN COMMISSION BEI GEORG REIMER.</div>
+           <div class="col-md-6 ocr">GED<span class="cdiff3 diff">Ä</span>CHTNISSRE<span class="cdiff13 diff">D</span>E<br><span class="cdiff16 diff">A</span><span class="cdiff17 diff">U</span><span class="cdiff18 diff">F</span><span class="cdiff19 diff"><br></span><span class="cdiff20 diff">E</span>RNS<span class="cdiff24 diff">T</span> CURTIUS<br>VON<br>ULRICH KÖHLER.<br>ABHANDLUNGEN DER KÖNIGL. PREUSS. AKADEMIE DER WISSEN<br>ZU BERLIN VOM JAHRE 1897.<br>BERLIN 1897.<br>VERLAG DER KÖNIGL. AKADEMIE DER WISSENSCHAFTEN.<br>IN COMMISSION BEI GEORG REIMER.</div>
+        </div>
+        
+
+<h2>Word differences</h2>
+
+        <div class="row">
+           <div class="col-md-6 gt"> <span class="wdiff0 diff">GEDACHTNISSRENE</span> <span class="wdiff1 diff">WRNSI</span> <span class="wdiff2 diff ellipsis">⋯</span> CURTIUS VON ULRICH KÖHLER ABHANDLUNGEN DER KÖNIGL PREUSS AKADEMIE DER WISSEN ZU BERLIN VOM JAHRE 1897 BERLIN 1897 VERLAG DER KÖNIGL AKADEMIE DER WISSENSCHAFTEN IN COMMISSION BEI GEORG REIMER</div>
+           <div class="col-md-6 ocr"> <span class="wdiff0 diff">GEDÄCHTNISSREDE</span> <span class="wdiff1 diff">AUF</span> <span class="wdiff2 diff">ERNST</span> CURTIUS VON ULRICH KÖHLER ABHANDLUNGEN DER KÖNIGL PREUSS AKADEMIE DER WISSEN ZU BERLIN VOM JAHRE 1897 BERLIN 1897 VERLAG DER KÖNIGL AKADEMIE DER WISSENSCHAFTEN IN COMMISSION BEI GEORG REIMER</div>
+        </div>
+        
+
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+function find_diff_class(classes) {
+    return classes.split(/\s+/).find(x => x.match(/.diff\d.*/));
+}
+
+$(document).ready(function() {
+    $('.diff').mouseover(function() {
+        let c = find_diff_class($(this).attr('class'))
+        $('.' + c).addClass('diff-highlight')
+    });
+    $('.diff').mouseout(function() {
+        let c = find_diff_class($(this).attr('class'))
+        $('.' + c).removeClass('diff-highlight')
+    });
+});
+</script>
+
+
+</body>
+</html>
