@@ -1,4 +1,4 @@
-# Testbericht OCR-D-Teststellung an Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)
+<h1> Testbericht OCR-D-Teststellung an Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)</h1>
 
 Matthias Boenig (BBAW OCR-D) boenig@bbaw.de, Christian Thomas (BBAW) thomas@bbaw.de, Britta Hermann (BBAW Bibliothek) hermann@bbaw.de
 
