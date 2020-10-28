@@ -1,9 +1,3 @@
-# Links
-
-- https://tboenig.github.io/ocrd_bbaw_pilotbibliothek/text/text.pdf
-- https://tboenig.github.io/ocrd_bbaw_pilotbibliothek/data
-
----
 # Testbericht OCR-D-Teststellung an Berlin-Brandenburgische Akademie der Wissenschaften (BBAW)
 
 Matthias Boenig (BBAW OCR-D) boenig@bbaw.de, Christian Thomas (BBAW) thomas@bbaw.de, Britta Hermann (BBAW Bibliothek) hermann@bbaw.de
