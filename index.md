@@ -85,8 +85,8 @@ Für die Prüfung wurde der [dingelhopper-processor](https://github.com/qurator-
 ocrd-dinglehopper -m mets.xml -I OCR-D-GT-PAGE,OCR-D-OCR-TESS -O OCR-D-OCR-TESS-EVAL
 ```
 Das Testergebnis kann eingesehen werden unter: 
-- [Report Gesamt](https://github.com/tboenig/ocrd_bbaw_pilotbibliothek/REPORT/data) 
-- [Report Image 5](https://github.com/tboenig/ocrd_bbaw_pilotbibliothek/REPORT/data/report_0005.html)
+- [Report Gesamt](https://github.com/tboenig/ocrd_bbaw_pilotbibliothek/data) 
+- [Report Image 5](https://github.com/tboenig/ocrd_bbaw_pilotbibliothek/data/report_0005.html)
  
 Viele Fehler sind auf die falsche Erkennung des langen s ("ſ", U+017F) zurückzuführen. Zwar ist der Text in Antiqua gesetzt, dennoch wird das lange s verwendet. Dies ist kein Einzelfall in den Akademieschriften. So ist in wesentlich älteren und fremdsprachigen Publikationen ebenfalls diese Art der Schrifttypographie zu beobachten. Für die Erkennung wurde das Standard-Erkennungs-Modell Deutsch und Latein verwendet. Da in diesem Modell kein langes s vorkommt, konnte die OCR dieses auch nicht korrekt erkennen. 
 
